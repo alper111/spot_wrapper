@@ -189,8 +189,9 @@ class SpotImages:
             self._camera_image_requests.append(
                 build_image_request(
                     "hand_color_image",
-                    image_format=image_pb2.Image.FORMAT_JPEG,
-                    pixel_format=image_pb2.Image.PIXEL_FORMAT_RGB_U8,
+                    image_format=image_pb2.Image.FORMAT_RAW,
+                    # image_format=image_pb2.Image.FORMAT_JPEG,
+                    # pixel_format=image_pb2.Image.PIXEL_FORMAT_RGB_U8,
                     quality_percent=self._image_quality.hand_image_quality,
                 )
             )
